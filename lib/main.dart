@@ -23,6 +23,8 @@ class CalculatorPage extends StatefulWidget {
 class _CalculatorPageState extends State<CalculatorPage> {
   @override
   Widget build(BuildContext context) {
-    return new Container();
+    return new Container(
+      color: Colors.black,
+    );
   }
 }
