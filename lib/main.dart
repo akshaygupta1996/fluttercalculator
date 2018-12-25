@@ -23,8 +23,26 @@ class CalculatorPage extends StatefulWidget {
 class _CalculatorPageState extends State<CalculatorPage> {
   @override
   Widget build(BuildContext context) {
-    return new Container(
-      color: Colors.black,
+    return new Scaffold(
+      body: Container(
+        color: Colors.black,
+        child: new Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Flexible(
+              flex: 3,
+              child: new Container(
+                  color: Colors.black),
+            ),
+            Flexible(
+              flex: 5,
+              child: Container(
+                color: Colors.white,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
